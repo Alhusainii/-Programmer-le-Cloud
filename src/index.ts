@@ -1,4 +1,6 @@
-import { helloWorld } from './hello-world';
+import { app } from "./server"
 
-const greet = helloWorld();
-console.log(greet);
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+    console.log(`Serveur en cours d'exécution sur http://localhost:${PORT}`);
+});
