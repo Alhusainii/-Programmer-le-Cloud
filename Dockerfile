@@ -7,7 +7,7 @@ WORKDIR /app
 # copie des fichiers du dépôt
 COPY . .
 
-run apk add npm
+RUN apk add npm
 
 # installation des dépendances avec npm
 RUN npm install
